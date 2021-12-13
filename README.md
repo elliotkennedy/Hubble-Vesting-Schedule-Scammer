@@ -1,2 +1,4 @@
-# Hubble-Vesting-Schedule
-This is Hubble VestingSchedule
+# vesting-schedule
+
+Make .env file to root folder like this
+"DEPLOYMENT_CLUSTER=localnet"

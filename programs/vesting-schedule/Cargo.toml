@@ -1,0 +1,27 @@
+[package]
+name = "vesting_schedule"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "vesting_schedule"
+doctest = false
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-spl = "0.18.0"
+anchor-lang = "0.18.0"
+serde = { version = "1.0", features = ["derive"] }
+spl-token = {version = "3.1.1", features = ["no-entrypoint"]}
+vipers = "1.5.3"
+
+[dev-dependencies]
+quickcheck = "1"
+quickcheck_macros = "1"
